@@ -1,0 +1,8 @@
+images original/
+images_deleted/
+deleted_log.csv
+data.csv.bak
+build_uuid_dataset.py
+description.md
+__pycache__/
+data.zip
