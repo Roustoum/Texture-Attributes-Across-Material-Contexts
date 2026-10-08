@@ -1,6 +1,6 @@
 # Texture Attributes Across Material Contexts
 
-A dataset of 5,553 real-world texture photographs, each labeled with one of 47 texture categories (*banded*, *cracked*, *honeycombed*, *marbled*, *zigzagged*, ...), with context tags describing the material or object the texture appears on.
+A dataset of 5,165 real-world texture photographs, each labeled with one of 47 texture categories (*banded*, *cracked*, *honeycombed*, *marbled*, *zigzagged*, ...), with context tags describing the material or object the texture appears on.
 
 ## Overview
 
@@ -17,7 +17,7 @@ Image filenames are randomly generated UUIDs, so filenames do not reveal the cat
   - `path`: String. Relative path to the image, `images/<id>.jpg`.
   - `classe`: String. Texture category, one of 47 values. Target column.
   - `context_tags`: String. 1–4 tags separated by `|`, from a vocabulary of 24 tags.
-- `images/` — 5,553 JPEG files (RGB, variable resolution, roughly 230–900 px per side, not resized).
+- `images/` — 5,165 JPEG files (RGB, variable resolution, roughly 230–900 px per side, not resized).
 - `LICENSE` — license file.
 
 ## Example
@@ -33,7 +33,7 @@ id,path,classe,context_tags
 
 `banded`, `blotchy`, `braided`, `bubbly`, `bumpy`, `chequered`, `cobwebbed`, `cracked`, `crosshatched`, `crystalline`, `dotted`, `fibrous`, `flecked`, `freckled`, `frilly`, `gauzy`, `grid`, `grooved`, `honeycombed`, `interlaced`, `knitted`, `lacelike`, `lined`, `marbled`, `matted`, `meshed`, `paisley`, `perforated`, `pitted`, `pleated`, `polka-dotted`, `porous`, `potholed`, `scaly`, `smeared`, `spiralled`, `sprinkled`, `stained`, `stratified`, `striped`, `studded`, `swirly`, `veined`, `waffled`, `woven`, `wrinkled`, `zigzagged`.
 
-Between 103 and 120 images per category.
+Between 80 and 120 images per category.
 
 ## Context tags
 
@@ -50,7 +50,7 @@ The images were collected from the internet and remain the property of their res
 ## Known Limitations
 
 - Each image has a single category, although some textures show more than one attribute.
-- Some `context_tags` combinations appear mostly with one category (e.g. 58 of the 60 images tagged `nature|liquid` are `bubbly`).
+- Some `context_tags` combinations appear mostly with one category (e.g. 55 of the 57 images tagged `nature|liquid` are `bubbly`).
 - Images are not resized; resizing and cropping are left to the user.
 - The images reflect the content and photographic style of what is commonly published online.
 
